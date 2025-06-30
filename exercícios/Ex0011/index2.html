@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício_imagens_dinâmicas</title>
+</head>
+<body>
+    <picture>
+        <source media="(max-width:720px )" srcset="imagens/study-p.jpg" type="image/jpg">
+        <source media="(max-width:1320px )" srcset="imagens/study-m.jpg" type="image/jpg">
+        <img src="imagens/study-g.jpg" alt="Imagen dinámica">
+    </picture>
+    <h1>Reprodução de Áudio</h1>
+    <p>A seguir encontre audios adicionados nesta página:</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/System_Corruption.mp3" type="audio/mpeg">
+        <source src="midia/System_Corruption.ogg" type="audio/ogg">
+        <source src="midia/System_Corruption.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir audio <a href="midia/System_Corruption.mp3">Clique aqui para baixar o arquivo mp3</a></p>
+
+    </audio>
+</body>
+</html>

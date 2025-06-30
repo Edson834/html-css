@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header{
+            background-color: rgb(0, 0, 0);
+            padding:0px;
+            margin: 0x;
+            color: white;
+            ;
+        }
+
+        header>h1{
+            margin: 0px;
+        }
+
+        nav{
+            background-color: rgb(0, 0, 0);
+            text-align: right;
+            box-shadow: 2px 2px 3px 0px #0000007a;
+            width: 100%;
+            padding: 20px;
+        }
+
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 20px;
+            display: inline-block;
+        }
+
+        .last{
+            padding-right: 30px;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 11px 0px;
+            box-shadow: 4px 4px 1px 0px #00000075;
+        }
+        
+        
+
+        
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin: 0px;
+        }
+
+        footer>p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+       
+        <nav>
+            <a href="#">link1</a>
+            <a href="#">link2</a>
+            <a href="#">link3</a>
+            <a href="#">link4</a>
+            <a href="#" class="last">link5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h1>Assuntos sobre lorem ipsum</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea tempore velit, architecto officiis asperiores distinctio tenetur qui. Vitae eveniet voluptas cum velit beatae modi consequuntur quod, explicabo nesciunt architecto aliquam?</p>
+
+                <aside>
+                    <p>Feito por nós</p>
+                </aside>
+            </article>
+        </section>
+        <section id="notícias">
+            <article>
+                <h1>Notícias sobre lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod deleniti veniam accusamus illum quo a qui. Consequatur facilis, quo beatae qui rerum architecto libero a aspernatur ad asperiores voluptatum fugit?</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim.</p>
+    </footer>
+</body>
+</html>
