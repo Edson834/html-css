@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+.passion-one-regular {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.passion-one-bold {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.passion-one-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.sriracha-regular {
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Sriracha", sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+header h1 {
+    font-family: "Passion One";
+    font-size: 10em;
+    font-weight: bold;
+    font-style: normal;
+}
+
+header p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header p a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+header p a:hover {
+    text-decoration: underline;
+}
+
+article p {
+  width: 680px;
+  font-size: 3.5rem;
+  margin: 80px 30px;
+}
+
+.background-section {
+  min-height: 800px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+
+.section-1 {
+  background: url('../imagens/background001.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.section-2 {
+  background: url('../imagens/background002.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.background-section article {
+  padding: 40px 0px;
+}
+
+.background-section article p {
+  background-color: rgba(0, 0, 0, 0.411);
+}
