@@ -1,29 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 
-.passion-one-regular {
-  font-family: "Passion One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.passion-one-bold {
-  font-family: "Passion One", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.passion-one-black {
-  font-family: "Passion One", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.sriracha-regular {
-  font-family: "Sriracha", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 
 * {
     margin: 0;
@@ -33,45 +11,53 @@
 
 body {
     font-family: "Sriracha", sans-serif;
+    height: 100vh;
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
+    font-weight: bolder;
     padding: 50px;
 }
 
 header h1 {
     font-family: "Passion One";
-    font-size: 10em;
+    font-size: 10vw;
     font-weight: bold;
     font-style: normal;
+    font-variant: small-caps;
 }
 
 header p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Passion One", Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
 }
 
-header p a {
-    font-weight: bold;
+header p a, footer p a {
     text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
     color: white;
 }
 
-header p a:hover {
+header p a:hover, footer p a:hover {
     text-decoration: underline;
 }
 
-article p {
-  width: 680px;
-  font-size: 3.5rem;
-  margin: 80px 30px;
+section {
+  font-size: 4vw;
+  padding: 10vh 30px;
 }
 
+section p {
+  padding-bottom: 30px;
+}
+
+
 .background-section {
-  min-height: 800px;
-  width: 100%;
   background-color: black;
   color: white;
 }
@@ -87,10 +73,14 @@ article p {
   background-size: cover;
 }
 
-.background-section article {
-  padding: 40px 0px;
+
+.background-section p {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.411);
 }
 
-.background-section article p {
-  background-color: rgba(0, 0, 0, 0.411);
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
