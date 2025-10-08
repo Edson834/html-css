@@ -1,0 +1,33 @@
+
+
+body {
+    background-color: gray;
+    color: white;
+}
+
+main {
+    width: 800px;
+    height: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    margin: auto;
+}
+
+main p {
+    padding: 10px;
+}
+
+.um {
+    background-color: green;
+}
+
+.dois {
+    background-color: aqua;
+}
+
+.tres {
+    background-color: brown;
+}
+
