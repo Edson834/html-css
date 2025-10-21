@@ -13,6 +13,16 @@
             margin-bottom: 10px;
         }
 
+        .caixa > p {
+            display: none;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .caixa:hover > p {
+            display: block;
+        }
+
         .um {
             background-color: aqua;
         }
@@ -67,9 +77,11 @@
 </head>
 <body>
     <h1>Testando pseudo-classes</h1>
-    <div class="caixa um"></div>
-    <div class="caixa dois"></div>
-    <div class="caixa tres"></div>
-    <div class="caixa quatro"></div>
+    <div class="caixa um">
+        <p>A!</p>
+    </div>
+    <div class="caixa dois"><p>PA!</p></div>
+    <div class="caixa tres"><p>RE!</p></div>
+    <div class="caixa quatro"><p>CI!</p></div>
 </body>
 </html>

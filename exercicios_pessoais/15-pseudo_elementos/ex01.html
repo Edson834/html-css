@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul > li::before {
+            content: '\00AB';
+        }
+
+        ul > li::after {
+            content: '\00BB';
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de elementos configurados com pseudo-elementos css pelas pseudo-classes</h1>
+    <ul>
+        <li>Samsung&trade;</li>
+        <li>Apple&trade;</li>
+        <li>XIAOMI&trade;</li>
+        <li>VIVO&trade;</li>
+        <li>TECNO&trade;</li>
+        <li>Itel&trade;</li>
+    </ul>
+</body>
+</html>
