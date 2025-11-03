@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de tabela - 2</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+
+        caption {
+            font: normal bold 2em verdana, sans-serif;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+
+        th {
+            height: 30px;
+            vertical-align: bottom;
+            background-color: lightblue;
+        }
+
+        td {
+            text-align: right;
+            vertical-align: bottom;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Tabela com <q>Scopes</q></caption>
+        <thead>
+            <tr>
+                <th scope="col">campo1</th>
+                <th scope="col">campo2</th>
+                <th scope="col">campo3</th>
+                <th scope="col">campo4</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <tr>
+                <th scope="row">a</th>
+                <td>1</td>
+                <td>A</td>
+                <td>!</td>
+            </tr>
+            <tr>
+                <th scope="row">b</td>
+                <td>2</td>
+                <td>B</td>
+                <td>#</td>
+            </tr>
+            <tr>
+                <th scope="row">c</td>
+                <td>3</td>
+                <td>C</td>
+                <td>"</td>
+            </tr>
+
+            <tr>
+                <th scope="row">d</td>
+                <td>4</td>
+                <td>D</td>
+                <td>?</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>
