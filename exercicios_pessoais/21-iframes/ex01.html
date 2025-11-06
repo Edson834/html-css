@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de iframe - 1</title>
+    <style>
+        body {
+            color: white;
+            height: 96vh;
+            background: blue url('images/ai-generated-8612487_1280.jpg') center center no-repeat;
+            background-size: cover;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+
+
+        iframe {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            width: 600px;
+            height: 600px;
+            border: 5px solid black;
+
+            transform: translate(50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Página principal</h1>
+    <h2>Links de acesso</h2>
+    <ul>
+        <li><a href="pages/page01.html" target="iframe">Primeira página</a></li>
+        <li><a href="pages/page02.html" target="iframe">Segunda página</a></li>
+    </ul>
+    <iframe src="" name="iframe">
+        <p>O seu navegador não é compatível com isto.</p>
+    </iframe>
+</body>
+</html>
