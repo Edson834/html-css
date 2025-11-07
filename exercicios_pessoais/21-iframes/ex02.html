@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de iframe - 2</title>
+
+    <style>
+        body {
+            height: 96vh;
+            background: blueviolet url('images/leaf-4651088_1280.jpg') center center no-repeat;
+            background-size: cover;
+            color: white;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+        }
+
+
+        li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            text-decoration: underline;
+        }
+
+        li a::before {
+            content: '» ';
+        }
+
+        
+        iframe {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            width: 600px;
+            height: 600px;
+            border: 10px solid black;
+
+            transform: translate(50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Conteúdo do iframe pelo atributo <q>srcdoc</q></h1>
+    <h2>Links Interessantes</h2>
+    <ul>
+        <li><a href="pages/page01.html" target="iframe">Primeira página</a></li>
+        <li><a href="pages/page02.html" target="iframe">Segunda página</a></li>
+    </ul>
+    <iframe name="iframe" srcdoc="<h1><div style='
+        border: 10px solid black;
+        width: 400px;
+        height: 400px;
+        background: blue;
+                    '></div> <h1 style='color: blue; font-weight: bold;'>IFRAME HOME</h1> <p style='color: blue; font-weight: bold;'>Este é um conteúdo dentro do iframe, criado a partir do atributo <q>srcdoc</q>. Para trocar o que vê neste momento, basta clicar num dos links apresentados fora do iframe.</p></h1>" frameborder="0">
+    </iframe>
+</body>
+</html>
