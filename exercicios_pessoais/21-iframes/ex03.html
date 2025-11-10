@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de iframe - 3</title>
+
+    <style>
+        body {
+            background: blue url('images/leaf-4651088_1280.jpg') center center no-repeat;
+            background-size: cover;
+            color:  white;
+            height: 96vh;
+        }
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border: 10px solid black;
+            width: 600px;
+            height: 600px;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Uso de atributos de segurança do iframe: Referrerpolicy e Sandbox</h1>
+    <h2>Link</h2>
+    <ul>
+
+        <li>
+            <a href="https://www.cursoemvideo.com/" target="iframe"><img src="images/CursoemVideo-logo.png" alt="Youtube logo"></a>
+        </li>
+
+
+    </ul>
+
+    <iframe name="iframe" sandbox="sandbox allow-scripts" src="">
+        <p>O seu navegador não é compatível com isto.</p>
+    </iframe>
+</body>
+</html>
