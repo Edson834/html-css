@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de formlário - 3</title>
+
+    <style>
+        div {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+        }
+
+        div input {
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 15px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu formulário de Login</h1>
+    <form action="cadastro.php" method="post">
+        
+        <div>
+            <label for="iusuario">Usuário:</label>
+            <input placeholder="Nome de Usuário" size="13" required minlength="8" type="text" name="usuario" id="iusuario">
+        </div>
+
+
+        <div>
+            <label  for="isenha">Senha:</label>
+            <input placeholder="Senha" required minlength="8" type="password"  name="senha" id="isenha">
+        </div>
+
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
