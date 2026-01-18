@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>Meu Site</h1>
-        <span id="burguer" class="material-icons" onclick="clickMenu">menu</span>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
     </header>
     <menu id="itens">
         <ul>
@@ -34,11 +34,15 @@
     </main>
 
     <script>
-
+        
         function clickMenu() {
-            itens.style.display = 'block'
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+            
         }
-
     </script>
 
 </body>
