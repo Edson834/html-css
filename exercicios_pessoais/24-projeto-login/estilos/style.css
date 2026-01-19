@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+:root {
+    --cor_principal : #602c82;
+    --campo_inter: #94cfcd;
+    --cor_butao1: #53aaa7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cor_principal);
+}
+
+main {
+    background-color: white;
+    width: 245px;
+    height: 516px;
+    border-radius: 20px;
+    box-shadow: -4px 4px 4px #401e577e;
+    overflow: hidden;
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+main #sec-imagem {
+    height: 40%;
+    background: black url('../imagens/pattern_building.jpg') center center no-repeat;
+    background-size: cover;
+    
+}
+
+main #sec-login {
+    padding: 0 10px;
+}
+
+#sec-login h1 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0px;
+
+}
+
+#sec-login p {
+    font-size: 0.8em;
+}
+
+.grupo-form {
+    position: relative;
+    background-color: var(--cor_principal);
+    color: white;
+    height: 40px;
+    margin: 5px 0px;
+    border-radius: 6px;
+}
+
+.grupo-form span {
+    position: absolute;
+    box-sizing: border-box;
+    width: 45px;
+    height: 40px;
+    font-size: 30px;
+    bottom: 10px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.grupo-form input {
+    position: absolute;
+    background-color: var(--campo_inter);
+    font-size: 14px;
+    padding: 5px;
+    border: 0px;
+    border-radius: 8px;
+    height: 65%;
+    right: 2px;
+    bottom: 1px;
+}
+
+.grupo-form input:focus-within {
+    background-color: white;
+}
+
+/* Falta a estilização dos butões*/
+
+
