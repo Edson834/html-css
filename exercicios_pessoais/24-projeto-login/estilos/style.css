@@ -18,8 +18,8 @@ body {
 
 main {
     background-color: white;
-    width: 245px;
-    height: 516px;
+    width: 250px;
+    height: fit-content;
     border-radius: 20px;
     box-shadow: -4px 4px 4px #401e577e;
     overflow: hidden;
@@ -33,7 +33,7 @@ main {
 }
 
 main #sec-imagem {
-    height: 40%;
+    height: 206.4px;
     background: black url('../imagens/pattern_building.jpg') center center no-repeat;
     background-size: cover;
     
@@ -90,6 +90,41 @@ main #sec-login {
 }
 
 /* Falta a estilização dos butões*/
+
+.butoes input, a {
+    display: block;
+    width: 100%;
+    padding: 12px 0px;
+}
+
+.butoes input {
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: em;
+    color: white;
+    background-color: var(--cor_butao1);
+}
+
+.butoes a {
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 0px ;
+    margin-bottom: 25px;
+    border: 1px solid #2d6362;
+    border-radius: 5px;
+    color: #2d6362;
+}
+
+.butoes a:hover {
+    background-color: #64cbc8;
+}
+
+.butoes a span {
+    font-size: 12px;
+}
+
+
 
 
 
