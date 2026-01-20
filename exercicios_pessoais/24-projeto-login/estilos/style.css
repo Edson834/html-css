@@ -78,6 +78,7 @@ main #sec-login {
 .grupo-form input {
     display: inline-block;
     background-color: var(--campo_inter);
+    font-size: 1em;
     width: 80%;
     box-sizing: border-box;
     border: 0px;
