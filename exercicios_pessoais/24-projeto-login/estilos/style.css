@@ -11,6 +11,7 @@
     margin: 0;
 }
 
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--cor_principal);
@@ -23,6 +24,7 @@ main {
     border-radius: 20px;
     box-shadow: -4px 4px 4px #401e577e;
     overflow: hidden;
+    transition-duration: 0.3s;
 
     position: absolute;
 
@@ -33,7 +35,7 @@ main {
 }
 
 main #sec-imagem {
-    height: 206.4px;
+    padding: 100px 0px;
     background: black url('../imagens/pattern_building.jpg') center center no-repeat;
     background-size: cover;
     

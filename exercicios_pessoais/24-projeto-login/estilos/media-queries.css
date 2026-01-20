@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    body {
+        height: 100vh;
+        background-image: linear-gradient(to bottom,#5f3485,#4b999c);
+    }
+
+    main {
+        display: flex;
+        width: 80vw;
+        height: 285px;
+    }
+
+    #sec-imagem {
+        width: 30%;
+    }
+
+    #sec-login {
+        width: 70%;
+        box-shadow: -4px 0px 1px rgba(0, 0, 0, 0.507);
+    }
+
+    #sec-login .grupo-form input {
+        width: 90%;
+    }
+
+    
+
+}
