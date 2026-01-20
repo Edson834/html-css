@@ -56,35 +56,30 @@ main #sec-login {
 }
 
 .grupo-form {
-    position: relative;
     background-color: var(--cor_principal);
     color: white;
-    height: 40px;
-    margin: 5px 0px;
+    padding: 2px;
+    margin: 5px auto;
+    width: fit-content;
+    box-sizing: border-box;
     border-radius: 6px;
 }
 
 .grupo-form span {
-    position: absolute;
+    display: inline-block;
     box-sizing: border-box;
-    width: 45px;
-    height: 40px;
     font-size: 30px;
-    bottom: 10px;
-    padding-top: 15px;
-    text-align: center;
+    text-align: right;
+    vertical-align: bottom;
 }
 
 .grupo-form input {
-    position: absolute;
+    display: inline-block;
     background-color: var(--campo_inter);
-    font-size: 14px;
-    padding: 5px;
+    box-sizing: border-box;
     border: 0px;
     border-radius: 8px;
-    height: 65%;
-    right: 2px;
-    bottom: 1px;
+    padding: 10px;
 }
 
 .grupo-form input:focus-within {
