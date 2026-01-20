@@ -79,7 +79,7 @@ main #sec-login {
     box-sizing: border-box;
     border: 0px;
     border-radius: 8px;
-    padding: 10px;
+    padding: 10px 0px 10px 3px;
 }
 
 .grupo-form input:focus-within {
