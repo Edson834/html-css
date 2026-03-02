@@ -6,18 +6,24 @@
     <title>Document</title>
     <style>
         main {
-            height: 100vh;
-            width: 80%;
             display: flex;
             flex-flow: row nowrap;
             background-color: aqua;
         }
 
         div {
-            flex-basis: 150px;
+            flex: 1 1 150px;
             background-color: orange;
             border: 1px solid black;
             text-align: center;
+        }
+
+        #div-1{
+            flex: 4 0 150px;
+        }
+
+        #div-3 {
+            flex: 0 4 150px;
         }
 
 
