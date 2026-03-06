@@ -28,13 +28,18 @@ body {
     margin-bottom: 10px;
 }
 
-#media-text img {
-    flex-basis: 500px;
-    height: 200px;
-    /*margin: 0 59.96px;*/
-    margin: auto;
+#media-text .image {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
     padding: 0px 40px;
 }
+
+.image img {
+    height: 300px;
+    margin: auto;
+}
+
 
 #text-media {
     display: flex;
@@ -42,10 +47,15 @@ body {
     justify-content: space-between;
 }
 
-#text-media iframe {
-    flex: 1 1 500px;   
+#text-media .video {
+    display: flex;
+    justify-content: center;   
+    flex: auto;
     padding: 0px 40px;
-    margin: auto; 
+}
+
+.video > iframe {
+    flex: auto;
 }
 
 .text-block {   
