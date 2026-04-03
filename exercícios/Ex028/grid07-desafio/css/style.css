@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+main {
+    background-color: antiquewhite;
+    height: 100%;
+
+    display: grid;
+    grid-template: 20% 1fr 8fr 1fr / 1fr 2fr 1fr;
+    gap: 10px;
+}
+
+.bloco {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.topo {
+    background-color: lightskyblue;
+    color: white;
+    grid-area: 1 / 1 / 2 / span 3;
+}
+
+.menu {
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    grid-area: 2 / 1 / 3 / -1;
+}
+
+.principal {
+    background-color: brown;
+    color: gold;
+    grid-area: 3 / 1 / 4 / -2;
+
+}
+
+.secundario {
+    background-color: crimson;
+    color: goldenrod;
+    grid-area: 3 / 3 / 4 / -1;
+}
+
+.rodape {
+    background-color: darkblue;
+    color: chartreuse;
+    grid-area: -2 / 1 / -1 / span 3;
+}
