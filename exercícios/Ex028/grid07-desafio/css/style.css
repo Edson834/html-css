@@ -14,7 +14,7 @@ main {
     height: 100%;
 
     display: grid;
-    grid-template: 20% 1fr 8fr 1fr / 1fr 2fr 1fr;
+    grid-template: 20% 1fr 8fr 1fr / 2fr 100px;
     gap: 10px;
 }
 
@@ -24,14 +24,14 @@ main {
     align-items: center;
     justify-content: center;
 
-    font-size: 3vw;
+    font-size: 100%;
     font-weight: bold;
 }
 
 .topo {
     background-color: lightskyblue;
     color: white;
-    grid-area: 1 / 1 / 2 / span 3;
+    grid-area: 1 / 1 / 2 / -1;
 }
 
 .menu {
@@ -43,18 +43,18 @@ main {
 .principal {
     background-color: brown;
     color: gold;
-    grid-area: 3 / 1 / 4 / -2;
+    grid-area: 3 / 1 / 4 / 2;
 
 }
 
 .secundario {
     background-color: crimson;
     color: goldenrod;
-    grid-area: 3 / 3 / 4 / -1;
+    grid-area: 3 / 2 / 4 / -1;
 }
 
 .rodape {
     background-color: darkblue;
     color: chartreuse;
-    grid-area: -2 / 1 / -1 / span 3;
+    grid-area: -2 / 1 / -1 / -1;
 }
