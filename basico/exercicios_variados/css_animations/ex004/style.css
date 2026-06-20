@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+}
+
+.ring {
+    animation-name: ring;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ring {
+    0% {
+        transform: translatex(0);
+    }
+
+    25% {
+        transform: translatex(50px);
+    }
+
+    50% {
+        transform: translatex(-40px);
+    }
+
+    75% {
+        transform: translatex(30px);
+    }
+    100% {
+        transform: translatex(-20px);
+    }
+}

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    background-color: #aaaaaa;
+    color: white;
+    font-weight: bold;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+.message {
+    display: none;
+    max-width: 80%;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid green;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(69, 255, 69, 0.603);
+    color: white;
+    font-weight: bold;
+}
+
+.slideDown {
+    animation-name: slideDown;
+    animation-duration: 5s;
+}
+
+@keyframes slideDown {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+
+    25% {
+        top: 60px;
+        opacity: 1;
+    }
+
+    50% {
+        top: 60px;
+        opacity: 1;
+    }
+
+    60% {
+        top: 60px;
+        opacity: 1;
+    }
+
+    75% {
+        top: 60px;
+        opacity: 1;
+    }
+    to {
+        top: -100px;
+        opacity: 1;
+    }
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+label {
+    font-size: 1.5em;
+}
+
+#name {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button {
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+}

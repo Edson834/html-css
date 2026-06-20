@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations-pt2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Animations-pt2</h1>
+        <section id="topo">
+            <p>Role para baixo para ver as animações</p>
+            <p>Role para baixo para ver as animações</p>
+            <p>Role para baixo para ver as animações</p>
+            <p>Role para baixo para ver as animações</p>
+            <p>Role para baixo para ver as animações</p>
+            <p>Role para baixo para ver as animações</p>
+            <p>Role para baixo para ver as animações</p>
+            <p>Role para baixo para ver as animações</p>
+        </section>
+        </p>
+        <section id="blocos">
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+            <div class="bloco"></div>
+        </section>
+
+        <section id="listas" on>
+            <div class="lista">
+                <ul id="listaE">
+                    <li class="item1 itemE1">Item 1</li>
+                    <li class="item2 itemE2">Item 2</li>
+                    <li class="item3 itemE3">Item 3</li>
+                    <li class="item4 itemE4">Item 4</li>
+                </ul>
+            </div>
+            <div class="lista">
+                <ul id="listaD">
+                    <li class="item1 itemD1">Item 5</li>
+                    <li class="item2 itemD2">Item 6</li>
+                    <li class="item3 itemD3">Item 7</li>
+                    <li class="item4 itemD4">Item 8</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let corpo = document.getElementsByTagName('body')[0];
+        let blocos = document.getElementById('blocos');
+        let blocosSet = document.querySelectorAll('.bloco');
+        let itensE = document.querySelectorAll('.itemE1, .itemE2, .itemE3, .itemE4');
+        let itensD = document.querySelectorAll('.itemD1, .itemD2, .itemD3, .itemD4');
+        let listas = document.querySelector('#listas');
+        let listaE = document.getElementById('listaE');
+        let listaD = document.getElementById('listaD');
+        let timerE = 200
+        let timerD = 200
+        let observadorLista = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    mostrarItens();
+                }
+            });
+        });
+        let observadorBlocos = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    mostrarBlocos();
+                }
+            });
+        });
+
+        observadorLista.observe(listas);
+        observadorBlocos.observe(blocos);
+
+        function mostrarBlocos() {
+            blocosSet.forEach(bloco => {
+                setTimeout(() => {
+                    bloco.style.display = 'block';
+                }, 500);
+            });
+        }
+
+
+        function mostrarItens() {
+            if (listas) {
+                itensE.forEach(item => {
+                    setTimeout(() => {
+                        item.style.display = 'block';
+                    }, timerE += 200);
+                });
+                itensD.forEach(item => {
+                    setTimeout(() => {
+                        item.style.display = 'block';
+                    }, timerD += 200);
+                });
+            };
+        }
+    </script>
+</body>
+
+</html>

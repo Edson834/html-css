@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations-pt1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 id="titulo">I'm Shmooving</h1>
+        <p>Este exemplo mostra como usar animações CSS para fazer o elemento h1 se mover pela página</p>
+        <p>Além disso, emitimos algum texto sempre que um evento de animação dispara, para que você possa vê-los em ação.</p>
+        <ul id="output"></ul>
+    </main>
+
+    <script>
+        var e = document.getElementById('titulo')
+
+        e.addEventListener('animationstart', ouvinte, false)
+        e.addEventListener('animationend', ouvinte, false)
+        e.addEventListener('animationiteration', ouvinte, false)
+
+        e.className = 'slidein'
+
+        function ouvinte(e) {
+            var e1 = document.createElement('li')
+            switch (e.type) {
+                case 'animationstart':
+                    e1.innerHTML = 'Começou. O tempo é de ' + e.elapsedTime
+                    break
+                case 'animationend':
+                    e1.innerHTML = 'Terminou. O tempo é de ' + e.elapsedTime
+                    break
+                case 'animationiteration':
+                    e1.innerHTML = 'Iniciou o novo loop. O tempo é de ' + e.elapsedTime
+                    break
+            }
+
+            document.getElementById('output').appendChild(e1)
+
+        }
+    </script>
+</body>
+</html>

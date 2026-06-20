@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(230, 228, 228);
+}
+
+header h1, h2 {
+    font-weight: bold;
+}
+
+#cab-principal {
+    background: gray url('imagens/bg-3.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+}
+
+#bar-nav {
+    display: block;
+    width: 100%;
+    padding: 20px 30px;
+    margin-bottom: 120px;
+}
+
+#lista-links {
+    list-style-type: none;
+    text-align: right;
+}
+
+#lista-links li {
+    display: inline-block;
+}
+
+.link-nav {
+    background-color: rgba(128, 128, 128, 0.822);
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+#cab-principal h1 {
+    font-size: 40px;
+    text-shadow: 1px 1px black;
+    margin-bottom: 40px;
+}
+
+#cab-principal p {
+    background-color: rgba(0, 0, 0, 0.699);
+    border-bottom: 1px solid white;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+}
+
+main {
+    width: 800px;
+    margin: auto;
+
+}
+
+section {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+section header {
+    background-color: rgb(236, 236, 236);
+    border-bottom: 1px solid rgb(158, 158, 158);
+    padding: 5px 5px 10px 5px;
+    margin-bottom: 15px;
+}
+
+section article {
+    margin-bottom: 10px;
+}
+
+section aside {
+    width: fit-content;
+    background-color: rgb(172, 170, 170);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+section aside a {
+    color: blue;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0px;
+
+}
+
+
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <button id="abrir-btn">Click me</button>
+        <div id="fundo"></div>
+
+        <nav id="nav-bar">
+            <ul>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+                <li>link</li>
+            </ul>
+
+            <button id="fechar-btn">X</button>
+        </nav>
+    </main>
+
+    <script>
+        var open_btn = document.getElementById('abrir-btn')
+        var close_btn = document.getElementById('fechar-btn')
+        var navbar = document.getElementById('nav-bar')
+        var background = document.getElementById('fundo')
+        var opened = false
+
+        open_btn.addEventListener('click', abrir_fechar)
+        close_btn.addEventListener('click', abrir_fechar)
+        background.addEventListener('click', abrir_fechar)
+
+        function abrir_fechar() {
+            if (opened) {
+                navbar.style.animationName = 'slideout'
+                navbar.style.transform = 'translatex(-100%)'
+                background.style.display = 'none'
+                opened = false
+
+            } else {
+                navbar.style.display = 'flex'
+                navbar.style.animationName = 'slidein'
+                navbar.style.transform = 'translatex(0px)'
+                background.style.display = 'block'
+                opened = true
+            }
+        }
+    </script>
+</body>
+
+</html>
