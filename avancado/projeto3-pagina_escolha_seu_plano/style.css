@@ -1,0 +1,144 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C1013;
+    height: 100vh;
+}
+
+#nav-bar {
+    background-color: #050709;
+    color: white;
+    max-width: 1000px;
+    padding: 15px;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#nav-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.nav-link {
+    padding: 15px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.current {
+    background-color: #CBE200;
+    color: black;
+    pointer-events: none;
+}
+
+.current:hover {
+    text-decoration: none;
+}
+
+#main-content-container {
+    height: 100%;
+    color: white;
+    margin-top: 40px;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 40px;
+}
+
+#main-content-container h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+}
+
+#plan-cards {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;   
+    gap: 10px;
+}
+
+.plan-card {
+    width: 350px;
+    height: 400px;
+    background: #20262C;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+
+.plan-card-header {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #CBE200;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.card-info p {
+    margin-bottom: 20px;
+}
+
+.card-info p span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card-info ul {
+    list-style-position: inside;
+    line-height: 1.8;
+}
+
+.card-info ul li::marker {
+    color: #CBE200;
+}
+
+.plan-card-footer {
+    background-color: #CBE200;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    width: 90%;
+    padding: 15px;
+    margin: 0 auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.plan-card-footer:hover {
+    background-color: #e2fa0c;
+}
+
+
+
+
+
