@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font-family: 'Roboto';
+    --nav-bg-color: #162028;
+    --nav-text-color: #425564;
+    --text-color: #555;
+    --closing-sec-bg: #003d52;
+    --footer-bg-color: #0b171f;
+    --footer-text-color: #6f8597;
+}
+
+html {
+    font-family: var(--main-font-family);
+    font-size: 62.5%;
+    color: var(--text-color);
+}
+
+header {
+    font-family: 'Italiana';
+    font-weight: normal;
+
+}
+
+
+#main-header__nav-bar {
+    background-color: var(--nav-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    padding-right: 3rem;
+    padding-left: 15rem;
+}
+
+#nav-bar__logo {
+    flex: 1;
+
+}
+
+#nav-bar__logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+#nav-bar__links-set {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 6rem;
+    list-style-type: none;
+    font-family: var(--main-font-family);
+    font-size: 2rem;
+}
+
+#nav-bar__links-set a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    letter-spacing: 0.4ch;
+    font-weight: 600;
+}
+
+#main-header__hero-section img{
+    width: 100%;
+}
+
+#main-header {
+    margin-bottom: 8rem;
+}
+
+#main-content {
+    max-width: 80rem;
+    margin: auto;
+    text-align: center;
+}
+
+.header__title {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.article__paragraph {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin-bottom: 8rem;
+}
+
+.article__prominence-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.block__img{
+    margin-bottom: 1.5rem;
+}
+
+.block__name {
+    font-weight: bold;
+    font-size: 1.8rem;
+    letter-spacing: 0.3ch;
+    margin-bottom: 1rem;
+}
+
+.block__description {
+    font-size: 1.6rem;
+}
+
+.closing-section {
+    background: #003d52 url('../imagens/bg_detalhe.png') center center no-repeat;
+    background-size: cover;
+    color: white;
+    max-width: 100rem;
+    height: 70rem;
+    margin: auto;
+    margin-top: 8rem;
+    padding: 20rem 8rem;
+    text-align: left;
+}
+
+.closing-section__header .header__title {
+    font-size: 6rem;
+    margin-bottom: 6rem;
+}
+
+.closing-section__paragraph {
+    width: 60rem;
+    font-size: 1.6rem;
+}
+
+footer {
+    background: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    max-width: 100rem;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 0.5ch;
+}
+
+footer a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+}
+
+
+
+
+

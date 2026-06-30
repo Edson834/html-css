@@ -81,7 +81,7 @@ body {
 
 .plan-card {
     width: 350px;
-    height: 400px;
+    min-height: 400px;
     background: #20262C;
     color: white;
     padding: 20px;

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+
+    <style>
+        details {
+            padding: 10px;
+            border: 2px solid black;
+            width: 800px;
+            cursor: default;
+
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        details:open {
+            background-color: blue;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <details>
+        <summary>Como é que isto acontece</summary>
+        <p>Acontece assim: Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque corporis sed eligendi,
+            obcaecati reiciendis et omnis illo minus praesentium est quod dolorem maxime earum quam sit cupiditate?
+            Dignissimos, reprehenderit architecto.</p>
+    </details>
+</body>
+
+</html>

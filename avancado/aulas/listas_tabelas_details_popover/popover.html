@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popover</title>
+
+    <style>
+        :popover-open {
+            padding: 12px;
+            border-radius: 10px;
+        }
+
+        ::backdrop {
+            background-color: rgba(0, 0, 0, 0.315);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Popover</h1>
+    <button popovertarget="my-popover">Toggle popover</button>
+    <div id="my-popover" popover>Este texto é aberto ao clicar no botão</div>
+
+    <button popovertarget="my-popover2">Toggle popover auto</button>
+    <div id="my-popover2" popover="auto">Este texto é aberto ao clicar no botão</div>
+
+    <button popovertarget="my-popover3">Toggle popover manual</button>
+    <div id="my-popover3" popover="manual">Este texto é aberto ao clicar no botão<button popovertargetaction="hide"
+            popovertarget="my-popover3">Fechar</button></div>
+
+    <button popovertarget="my-popover4" popovertargetaction="show">Abrir popover</button>
+    <div id="my-popover4" popover>Este texto é aberto ao clicar no botão </div>
+
+    <div class="popover-container">
+        <button popovertarget="my-popover5">Toggle popover</button>
+        <div id="my-popover5" popover>Teste</div>
+    </div>
+</body>
+
+</html>
