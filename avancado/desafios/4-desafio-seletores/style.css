@@ -1,0 +1,23 @@
+a[target="_blank"]::after {
+    content: url('imagens/newWindow-icon.png');
+}
+
+a[href$=".pdf"]::before {
+    content: url('imagens/pdf-icon.gif');
+}
+
+input:checked + label {
+    color: green;
+}
+
+input:not(:checked) + label {
+    color: red;
+}
+
+input[disabled] + label {
+    color: blue;
+}
+
+li > ol > li:nth-child(3) {
+    background-color: orange;
+}

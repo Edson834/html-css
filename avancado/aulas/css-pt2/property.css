@@ -1,0 +1,21 @@
+@property --success-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: green;
+}
+
+:root {
+    --success-color: blue;
+}
+
+body {
+    --success-color: orange;
+}
+
+/* Embora se definiu valores em cascata para a variável --success, a configuração que prevalece é a da @property configurada acima, pois "inherits" foi definido como "false". Assim nem o :root pode alterar este valor padronizado. */
+
+div {
+    background-color: var(--success-color);
+    height: 600px;
+    width: 400px;
+}
